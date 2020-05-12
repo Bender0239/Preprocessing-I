@@ -1,1 +1,266 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #2D2D47;
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  color: #FDF5E6;
+}
+.container header h1 {
+  font-size: 3rem;
+  font-family: 'Work Sans', sans-serif;
+}
+@media (max-width: 633px) {
+  .container header h1 {
+    font-size: 2rem;
+  }
+}
+.container header nav {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 10%;
+}
+@media (max-width: 860px) {
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3%;
+  }
+}
+.container header a {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #FDF5E6;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2rem;
+}
+.container .helloDiv {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .helloDiv h2 {
+  font-family: 'Work Sans', sans-serif;
+  color: #FDF5E6;
+  font-size: 2.4rem;
+}
+@media (max-width: 700px) {
+  .container .helloDiv h2 {
+    font-size: 1.5rem;
+  }
+}
+.container .introDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.container .introDiv div {
+  width: 70%;
+  height: 20vh;
+  font-family: 'Work Sans', sans-serif;
+  color: #FDF5E6;
+}
+.container .introDiv div h3 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .container .introDiv div h3 {
+    font-size: 1.3rem;
+  }
+}
+.container .introDiv div p {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+}
+@media (max-width: 600px) {
+  .container .introDiv div p {
+    font-size: 1rem;
+  }
+}
+.container .cardDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container .cardDiv div {
+  width: 40%;
+  height: 40vh;
+  border: 2px solid #FDF5E6;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (max-width: 970px) {
+  .container .cardDiv div {
+    width: 60%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+.container .cardDiv div h4 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Work Sans', sans-serif;
+  color: #FDF5E6;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.container .cardDiv div ul {
+  margin-left: 20px;
+}
+.container .cardDiv div li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #FDF5E6;
+  font-family: 'Work Sans', sans-serif;
+}
+@media (max-width: 1160px) {
+  .container .cardDiv div li p {
+    font-size: 1rem;
+  }
+}
